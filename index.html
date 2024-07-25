@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <main class="encriptador">
+        <section>
+            <h1 class="espacio__icono">
+                <img src="./Img/mirror.png" class="icono__h1">
+            </h1>
+            <div class="lado__izquierdo">
+                <div class="solo__espacio">
+                    <p>
+                        <textarea id="caja__texto" placeholder="Ingrese el texto aquí" oninput="ajustarAltura()"></textarea>
+                    </p>
+                    <p class="advertencia">
+                        <img src="./Img/exclamacion.png" class="imagen__exclamacion">
+                        Solo letras minúsculas y sin acentos
+                    </p>
+                </div>
+                <div class="botones">
+                    <button onclick="encriptarTexto();" class="encriptar">Encriptar</button>
+                    <button onclick="desencriptarTexto();" class="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <div id="resultado">
+            <div class="lado__derecho" id="mensaje-inicial">
+                <img src="./Img/lupita.png" class="lupita">
+                <div class="no__encontrado">
+                    <p class="ningun__mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="ingresa__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Mauricio Valenzuela, alias Crimson. Mail: mauricio.valenzuela@usach.cl</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
